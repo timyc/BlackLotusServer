@@ -24,7 +24,7 @@ export default class GateServer {
     ServerMain(): void {
         let argv = require('minimist')(process.argv.slice(2));
         if (!argv.hasOwnProperty("server")) {
-            throw 'ERR: No server specified. USAGE: ts-node src/GateServer/Main --server=#SID';
+            throw 'ERR: No server config specified. USAGE: ts-node src/GateServer/Main --server=<SERVER_CONFIG_FILE>';
         }
         if (this.CreateAndStartGateServers(argv.server)) {
             OutputMsg(1, "-------------------------------------------");
