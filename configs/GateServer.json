@@ -1,0 +1,13 @@
+{
+    "LocalService": {
+        "ServerName": "BlackLotus",
+        "Address": "0.0.0.0",
+        "Port": 9901,
+        "MaxSession": 8192,
+        "SendThreadCount": 2
+    },
+    "BackServer": {
+        "Host": "127.0.0.1",
+        "Port": 23001
+    }
+}
