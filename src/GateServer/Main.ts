@@ -46,7 +46,7 @@ export default class GateServer {
         let pRunSock: CRunSockProcesser;
         let pRunData: CRunDataProcesser;
         pRunData = new CRunDataProcesser(Math.max(1024, config.LocalService.MaxSession));
-        pRunData.SetSendThreadCount(config.LocalService.SendThreadCount);
+        //pRunData.SetSendThreadCount(config.LocalService.SendThreadCount);
         pRunData.SetDataProcessType(0);
         pRunData.SetServerHost(config.BackServer.Host);
         pRunData.SetServerPort(config.BackServer.Port);
